@@ -76,7 +76,8 @@ else
 endif
 
 ifeq ($(CC), $(filter $(CC), h5cc h5pcc))
-	CFLAGS += -shlib
+	# CFLAGS += -shlib
+	CFLAGS += -lhdf5_hl
 endif
 
 UNAME_S := $(shell uname -s)
